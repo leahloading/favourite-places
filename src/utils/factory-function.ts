@@ -10,7 +10,9 @@ function createPlace(
     countryName: string, 
     mainImage: string, 
     location: string,
-    description: string
+    description: string,
+    photographer: string,
+    imgSrc: string
     ):Place {
     
         return {
@@ -20,6 +22,8 @@ function createPlace(
             mainImage,
             location,
             description,
+            photographer,
+            imgSrc
     }
 }
 

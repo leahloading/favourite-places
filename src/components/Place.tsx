@@ -5,6 +5,8 @@ interface Place {
     mainImage: string
     location: string
     description: string
+    photographer: string
+    imgSrc: string
     
 }
 
@@ -15,7 +17,7 @@ function PlaceEntry(props: Place): JSX.Element {
         <section>
             <img src={props.mainImage} width="320" height="auto"/>
             <h2>{props.title}</h2>
-            <h3>{props.placeName}, {props.countryName} <a href={props.location}>(map link)</a></h3>
+            <h3>{props.placeName}, {props.countryName} <a href={props.location} target="_blank">(map link)</a></h3>
             <p>{props.description}</p>
 
 
