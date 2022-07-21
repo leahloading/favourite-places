@@ -1,10 +1,10 @@
 import { Place } from "./Place";
 
-function ImageAttribution(prop: Place): JSX.Element {
+function ImageAttribution({photographer, imgSrc}: {photographer: string, imgSrc: string}): JSX.Element {
   return (
     <p>
-      <a href={prop.imgSrc} target="_blank" rel="noreferrer">
-        {prop.photographer}
+      <a href={imgSrc} target="_blank" rel="noreferrer">
+        {photographer}
       </a>
     </p>
   );
